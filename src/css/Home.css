@@ -1,0 +1,97 @@
+* {
+    font-family: "Pacifico", cursive;
+    /* font-family: "Nunito",sans-serif; */
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+  .container {
+    max-width: 100%;
+    height: 650px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/bg-hero.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  .container .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .container .restaurant-name {
+    align-items: center;
+    display: flex;
+    padding: 1%;
+    padding-left: 3%;
+    flex-basis: 30%;
+  }
+  .container .restaurant-name h2 {
+    margin: 0px;
+    font-size: 2rem;
+    color: #FEA116;
+    font-weight: 600;
+    padding-left: 30px;
+  }
+  .logo {
+    height: 40px;
+  }
+  .container .navbar ul {
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+    margin-right: 60px;
+  }
+  .container .navbar ul li {
+    padding: 0 20px;
+    list-style: none;
+  }
+  .container .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .container .navbar ul li a:hover {
+    color: #FEA116;
+    transition: 0.5s;
+  }
+  .container .navbar ul li button {
+    background-color: #FEA116;
+    font-weight: 600;
+    color: white;
+    border: #FEA116;
+    font-size: 1rem;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+  }
+  .container .content {
+    display: flex;
+    margin: 5%;
+    align-items: center;
+  }
+  .container .content .content-wrapper {
+    color: white;
+    width: 400px;
+  }
+  .container .content .content-wrapper h2 {
+    font-size: 2.7rem;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .container .content .spinner {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .container .content .spinner .spinner-image {
+    height: 400px;
+    animation: rotate 30s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Rotate the image 360 degrees */
+    }
+  }
