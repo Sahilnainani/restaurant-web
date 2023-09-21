@@ -55,6 +55,43 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div style={{ backgroundColor: "#F1F8FF", alignItems: "center" }}>
+        <div className="services-container">
+          <div className="service">
+            <FontAwesomeIcon className="service-logo" icon={faUserTie} />
+            <h4 className="service-heading">Master Chefs</h4>
+            <div className="service-about">
+              Our chefs are dedicated experts who transform the finest
+              ingredients into unforgettable dishes.
+            </div>
+          </div>
+          <div className="service">
+            <FontAwesomeIcon className="service-logo" icon={faUtensils} />
+            <h4 className="service-heading">Quality Food</h4>
+            <div className="service-about">
+              Whether it's a late-night snack, an early morning breakfast, we're
+              here to satisfy your appetite at any hour.
+            </div>
+          </div>
+          <div className="service">
+            <FontAwesomeIcon className="service-logo" icon={faCartShopping} />
+            <h4 className="service-heading">Online Order</h4>
+            <div className="service-about">
+              With just a few clicks, you can indulge in your favorite dishes
+              from the comfort of your own home.
+            </div>
+          </div>
+          <div className="service">
+            <FontAwesomeIcon className="service-logo" icon={faUserTie} />
+            <h4 className="service-heading">24/7 Service</h4>
+            <div className="service-about">
+              Our commitment to excellence shines through in every dish we
+              create.
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 };

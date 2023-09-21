@@ -95,3 +95,40 @@
       transform: rotate(360deg); /* Rotate the image 360 degrees */
     }
   }
+  .services-container {
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    width: 100%;
+    /* margin-left: auto;
+      margin-right: auto; */
+    padding: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: gainsboro; */
+  }
+  .services-container .service {
+    background-color: white;
+    flex: 20%;
+    height: 280px;
+    margin: 15px;
+    padding: 20px;
+    padding-top: 40px;
+  }
+  .services-container .service:hover {
+    background-color: #FEA116;
+    color: white;
+    transition: 0.5s;
+  }
+  .services-container .service .service-logo {
+    height: 3rem;
+    color: #FEA116;
+  }
+  .services-container .service:hover .service-logo {
+    color: white;
+    transition: 0.5s;
+  }
+  .services-container .service h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  
