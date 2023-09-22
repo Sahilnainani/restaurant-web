@@ -156,6 +156,96 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="menu-container">
+        <h2>Food Menu</h2>
+        <h1>Most Popular Items</h1>
+        <div className="menu">
+          <div className="menu1">
+            <div className="item">
+              <img src={require("../img/menu-1.jpg")} alt="" />
+              <div className="details">
+                <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-2.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-3.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-4.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+          </div>
+          <div className="menu1">
+            <div className="item">
+              <img src={require("../img/menu-5.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-6.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-7.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+            <div className="item">
+              <img src={require("../img/menu-8.jpg")} alt="" />
+              <div className="details">
+              <div className="price">
+                  <h4>Chicken Burger</h4>
+                  <h2>$115</h2>
+                </div>
+                <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

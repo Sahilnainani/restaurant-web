@@ -225,6 +225,63 @@
     width: 180px;
     cursor: pointer;
   }
+  .menu-container{
+    background-color: #F1F8FF;
+    padding:5%;
+  }
+  .menu-container .menu{
+    display:flex
+  }
+  .menu-container h2{
+    width: fit-content;
+    font-size: 1.25rem;
+    color: #FEA116;
+    margin: 0 auto;
+    
+  }
+  .menu-container h1{
+    width: fit-content;
+    margin: 5px auto;
+    font-size: 2rem;
+    /* font-family: "Nunito",sans-serif; */
+    font-weight: 800;
+  }
+  .menu-container .menu{
+    margin: 15px 10px;
+  }
+  .menu-container .menu .menu1{
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px;
+  }
+  .menu-container .menu .menu1 .item{
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: fit-content;
+    margin: 25px auto;
+  }
+  .menu-container .menu .menu1 .item .details{
+    align-items: center;
+    margin: 0 20px;
+  }
+  .menu-container .menu .menu1 .item .details .price{
+    position: relative;
+    display: flex;
+  }
+  .menu-container .menu .menu1 .item .details .price h4{
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .menu-container .menu .menu1 .item .details .price h2{
+    margin: 0;
+    position: absolute;
+    right: 0;
+    color: #FEA116;
+  }
+  .menu-container .menu .menu1 .item .details p{
+    margin: auto 0;
+  }
   @media screen and (max-width: 1300px) {
       .services-container .service {
         flex: 35%;
@@ -237,6 +294,11 @@
         .about-container{
             display: block;
         }
+      }
+      @media screen and (max-width: 900px) {
+        .menu-container .menu{
+            display:block;
+          }
       }
     @media screen and (max-width: 650px) {
       .services-container .service {
