@@ -174,7 +174,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-2.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -184,7 +184,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-3.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -194,7 +194,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-4.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -206,7 +206,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-5.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -216,7 +216,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-6.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -226,7 +226,7 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-7.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
@@ -236,12 +236,34 @@ const Home = () => {
             <div className="item">
               <img src={require("../img/menu-8.jpg")} alt="" />
               <div className="details">
-              <div className="price">
+                <div className="price">
                   <h4>Chicken Burger</h4>
                   <h2>$115</h2>
                 </div>
                 <p>crispy chicken, sautéed mushrooms, or caramelized onions</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="booking-container">
+        <div className="video">
+          <video src={require('../img/JunkFood1.mp4')} loop muted autoPlay={"autoplay"} controls=''></video>
+        </div>
+        <div className="booking">
+          <div className="booking-content">
+            <h2>Reservation</h2>
+            <h1>Book A Table Online</h1>
+            <div className="input-fields">
+              <input type="name" placeholder="Your Name" />
+              <select id="no-of-people">
+                <option value="">No-Of-People</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+              <input type="datetime-local" />
             </div>
           </div>
         </div>

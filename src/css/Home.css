@@ -1,308 +1,371 @@
 * {
-    font-family: "Pacifico", cursive;
-    /* font-family: "Nunito",sans-serif; */
-    box-sizing: border-box;
-    /* overflow-x: hidden; */
+  font-family: "Pacifico", cursive;
+  /* font-family: "Nunito",sans-serif; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+.container {
+  max-width: 100%;
+  height: 650px;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/bg-hero.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+}
+.container .navbar {
+  display: flex;
+  align-items: center;
+}
+.container .restaurant-name {
+  align-items: center;
+  display: flex;
+  padding: 1%;
+  padding-left: 3%;
+  flex-basis: 30%;
+}
+.container .restaurant-name h2 {
+  margin: 0px;
+  font-size: 2rem;
+  color: #fea116;
+  font-weight: 600;
+  padding-left: 30px;
+}
+.logo {
+  height: 40px;
+}
+.container .navbar ul {
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  margin-right: 60px;
+}
+.container .navbar ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+.container .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.container .navbar ul li a:hover {
+  color: #fea116;
+  transition: 0.5s;
+}
+.container .navbar ul li button {
+  background-color: #fea116;
+  font-weight: 600;
+  color: white;
+  border: #fea116;
+  font-size: 1rem;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+}
+.container .content {
+  display: flex;
+  margin: 5%;
+  align-items: center;
+}
+.container .content .content-wrapper {
+  color: white;
+  width: 400px;
+}
+.container .content .content-wrapper h2 {
+  font-size: 2.7rem;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.container .content .spinner {
+  margin-left: auto;
+  margin-right: 15px;
+}
+.container .content .spinner .spinner-image {
+  height: 400px;
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .container {
-    max-width: 100%;
-    height: 650px;
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../img/bg-hero.jpg");
-    background-position: 50% 0;
-    background-size: cover;
+  100% {
+    transform: rotate(360deg); /* Rotate the image 360 degrees */
+  }
+}
+.services-container {
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  width: 100%;
+  /* margin-left: auto;
+      margin-right: auto; */
+  padding: 4%;
+  padding-top: 8%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: gainsboro; */
+}
+.services-container .service {
+  background-color: white;
+  flex: 20%;
+  height: 280px;
+  margin: 15px;
+  padding: 20px;
+  padding-top: 40px;
+}
+.services-container .service:hover {
+  background-color: #fea116;
+  color: white;
+  transition: 0.5s;
+}
+.services-container .service .service-logo {
+  height: 3rem;
+  color: #fea116;
+}
+.services-container .service:hover .service-logo {
+  color: white;
+  transition: 0.5s;
+}
+.services-container .service h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.about-container {
+  background-color: #f1f8ff;
+  padding: 5%;
+  display: flex;
+}
+.about-container .about-photos {
+  margin-left: auto;
+  margin-right: auto;
+  width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-container .about-photos .img-container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+}
+.about-container .about-photos .img-container .about-img1 {
+  height: 300px;
+  width: 300px;
+}
+.about-container .about-photos .img-container .about-img2 {
+  position: absolute;
+  bottom: 0;
+  height: 220px;
+  width: 220px;
+}
+.about-container .about-photos .img-container .about-img3 {
+  position: absolute;
+  right: 0;
+  height: 220px;
+  width: 220px;
+}
+.about-container .about-photos .img-container .about-img4 {
+  height: 300px;
+  width: 300px;
+}
+.about-container .about-content {
+  align-items: center;
+  display: grid;
+  flex: 1;
+  margin-left: 30px;
+}
+.about-container .about-content h5 {
+  color: #fea116;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.about-container .about-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 800;
+}
+.about-container .about-content p {
+  margin: 10px 0;
+}
+.about-container .about-content .experience {
+  display: flex;
+  margin-bottom: 20px;
+}
+.about-container .about-content .experience .experience1 {
+  align-items: center;
+  width: 50%;
+  display: flex;
+}
+.about-container .about-content .experience .experience1 .number {
+  color: #fea116;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.about-container .about-content .experience .experience1 div {
+  align-items: center;
+  display: grid;
+  height: 45px;
+  margin-left: 15px;
+}
+.about-container .about-content .experience .experience1 div h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+.about-container .about-content .experience .experience1 div p {
+  margin: 0;
+}
+.about-container .about-content button {
+  background-color: #fea116;
+  font-weight: 600;
+  color: white;
+  border: #fea116;
+  font-size: 0.8rem;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+}
+.menu-container {
+  background-color: #f1f8ff;
+  padding: 4%;
+}
+.menu-container .menu {
+  display: flex;
+}
+.menu-container h2 {
+  width: fit-content;
+  font-size: 1.5rem;
+  color: #fea116;
+  margin: 0 auto;
+}
+.menu-container h1 {
+  width: fit-content;
+  margin: 5px auto;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.menu-container .menu {
+  margin: 15px 10px;
+}
+.menu-container .menu .menu1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.menu-container .menu .menu1 .item {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  width: fit-content;
+  margin: 25px auto;
+}
+.menu-container .menu .menu1 .item .details {
+  align-items: center;
+  margin: 0 20px;
+}
+.menu-container .menu .menu1 .item .details .price {
+  position: relative;
+  display: flex;
+}
+.menu-container .menu .menu1 .item .details .price h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.menu-container .menu .menu1 .item .details .price h2 {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  color: #fea116;
+}
+.menu-container .menu .menu1 .item .details p {
+  margin: auto 0;
+}
+.booking-container{
+    display: flex;
+}
+.booking-container .video{
+    width: 50%;
+}
+.booking-container .video video{
+    width: 100%;
+}
+.booking-container .booking{
+    background-color: #0F172B;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    width: 50%;
+}
+.booking-container .booking .booking-content{
+    height: fit-content;
+}
+.booking-container .booking .booking-content h2{
+    width: fit-content;
+    font-size: 1.5rem;
+    color: #fea116;
+    margin: 0 20px;
+}
+.booking-container .booking .booking-content h1{
+    color: white;
+    width: fit-content;
+    margin: 5px 20px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.booking-container .booking .booking-content .input-fields{
+    display: grid;
+    padding: 20px;
+}
+.booking-container .booking .booking-content .input-fields input{
+    color: grey;
+    height: 40px;
+    margin: 12px 0;
+    max-width: 600px;
+}
+.booking-container .booking .booking-content .input-fields select{
+    height: 40px;
+    color: gray;
+    margin: 12px 0;
+    max-width: 600px;
+
+}
+.booking-container .booking .booking-content .input-fields select option{
+    color: gray;
+}
+@media screen and (max-width: 1300px) {
+  .services-container .service {
+    flex: 35%;
   }
   .container .navbar {
-    display: flex;
-    align-items: center;
+    display: none;
   }
-  .container .restaurant-name {
-    align-items: center;
-    display: flex;
-    padding: 1%;
-    padding-left: 3%;
-    flex-basis: 30%;
-  }
-  .container .restaurant-name h2 {
-    margin: 0px;
-    font-size: 2rem;
-    color: #FEA116;
-    font-weight: 600;
-    padding-left: 30px;
-  }
-  .logo {
-    height: 40px;
-  }
-  .container .navbar ul {
-    align-items: center;
-    margin-left: auto;
-    display: flex;
-    margin-right: 60px;
-  }
-  .container .navbar ul li {
-    padding: 0 20px;
-    list-style: none;
-  }
-  .container .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-  .container .navbar ul li a:hover {
-    color: #FEA116;
-    transition: 0.5s;
-  }
-  .container .navbar ul li button {
-    background-color: #FEA116;
-    font-weight: 600;
-    color: white;
-    border: #FEA116;
-    font-size: 1rem;
-    height: 40px;
-    width: 180px;
-    cursor: pointer;
-  }
-  .container .content {
-    display: flex;
-    margin: 5%;
-    align-items: center;
-  }
-  .container .content .content-wrapper {
-    color: white;
-    width: 400px;
-  }
-  .container .content .content-wrapper h2 {
-    font-size: 2.7rem;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-  .container .content .spinner {
-    margin-left: auto;
-    margin-right: 15px;
-  }
-  .container .content .spinner .spinner-image {
-    height: 400px;
-    animation: rotate 30s linear infinite;
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg); /* Rotate the image 360 degrees */
-    }
-  }
-  .services-container {
-    font-family: "Heebo", sans-serif;
-    display: flex;
+  .booking-container{
+    display: block;
+}
+.booking-container .video{
     width: 100%;
-    /* margin-left: auto;
-      margin-right: auto; */
-    padding: 5%;
-    padding-top: 10%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* background-color: gainsboro; */
-  }
-  .services-container .service {
-    background-color: white;
-    flex: 20%;
-    height: 280px;
-    margin: 15px;
-    padding: 20px;
-    padding-top: 40px;
-  }
-  .services-container .service:hover {
-    background-color: #FEA116;
-    color: white;
-    transition: 0.5s;
-  }
-  .services-container .service .service-logo {
-    height: 3rem;
-    color: #FEA116;
-  }
-  .services-container .service:hover .service-logo {
-    color: white;
-    transition: 0.5s;
-  }
-  .services-container .service h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.2rem;
-  }
+}
+.booking-container .booking{
+    width: 100%;
+}
+}
+@media screen and (max-width: 1100px) {
   .about-container {
-    background-color: #F1F8FF;
-    padding: 6%;
-    display: flex;
+    display: block;
   }
-  .about-container .about-photos {
-      margin-left: auto;
-      margin-right: auto;
-    width: 620px;
-    display: flex;
-    flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  .menu-container .menu {
+    padding-top: 10px;
+    display: block;
   }
-  .about-container .about-photos .img-container {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 5px;
+  .menu-container .menu .menu1 {
+    padding: 0 10px;
   }
-  .about-container .about-photos .img-container .about-img1 {
-    height: 300px;
-    width: 300px;
+}
+@media screen and (max-width: 650px) {
+  .services-container .service {
+    flex: 50%;
   }
-  .about-container .about-photos .img-container .about-img2 {
-    position: absolute;
-    bottom: 0;
-    height: 220px;
-    width: 220px;
-  }
-  .about-container .about-photos .img-container .about-img3 {
-    position: absolute;
-    right: 0;
-    height: 220px;
-    width: 220px;
-  }
-  .about-container .about-photos .img-container .about-img4 {
-    height: 300px;
-    width: 300px;
-  }
-  .about-container .about-content {
-    align-items: center;
-    display: grid;
-    flex: 1;
-    margin-left: 30px;
-  }
-  .about-container .about-content h5 {
-    color: #FEA116;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .about-container .about-content h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    font-weight: 800;
-  }
-  .about-container .about-content p {
-      margin: 10px 0;
-    }
-  .about-container .about-content .experience{
-      display: flex;
-      margin-bottom: 20px;
-  }
-  .about-container .about-content .experience .experience1{
-      align-items: center;
-      width: 50%;
-      display: flex;
-  }
-  .about-container .about-content .experience .experience1 .number{
-      color: #FEA116;
-      font-size: 3rem;
-      font-weight: 600;
-  }
-  .about-container .about-content .experience .experience1 div{
-      align-items: center;
-      display: grid;
-      height:45px;
-      margin-left: 15px;
-  }
-  .about-container .about-content .experience .experience1 div h6{
-      margin: 0;
-      font-size: 1rem;
-  }
-  .about-container .about-content .experience .experience1 div p{
-      margin: 0;
-  }
-  .about-container .about-content button {
-    background-color: #FEA116;
-    font-weight: 600;
-    color: white;
-    border: #FEA116;
-    font-size: 0.8rem;
-    height: 40px;
-    width: 180px;
-    cursor: pointer;
-  }
-  .menu-container{
-    background-color: #F1F8FF;
-    padding:5%;
-  }
-  .menu-container .menu{
-    display:flex
-  }
-  .menu-container h2{
-    width: fit-content;
-    font-size: 1.5rem;
-    color: #FEA116;
-    margin: 0 auto;
-    
-  }
-  .menu-container h1{
-    width: fit-content;
-    margin: 5px auto;
-    font-size: 2.5rem;
-    /* font-family: "Nunito",sans-serif; */
-    font-weight: 800;
-  }
-  .menu-container .menu{
-    margin: 15px 10px;
-  }
-  .menu-container .menu .menu1{
-    margin-left: auto;
-    margin-right:auto;
-    padding: 10px;
-  }
-  .menu-container .menu .menu1 .item{
-    align-items: center;
-    display: flex;
-    height: 100px;
-    width: fit-content;
-    margin: 25px auto;
-  }
-  .menu-container .menu .menu1 .item .details{
-    align-items: center;
-    margin: 0 20px;
-  }
-  .menu-container .menu .menu1 .item .details .price{
-    position: relative;
-    display: flex;
-  }
-  .menu-container .menu .menu1 .item .details .price h4{
-    margin: 0;
-    font-size: 1.1rem;
-  }
-  .menu-container .menu .menu1 .item .details .price h2{
-    margin: 0;
-    position: absolute;
-    right: 0;
-    color: #FEA116;
-  }
-  .menu-container .menu .menu1 .item .details p{
-    margin: auto 0;
-  }
-  @media screen and (max-width: 1300px) {
-      .services-container .service {
-        flex: 35%;
-      }
-      .container .navbar {
-        display: none;
-      }
-    }
-    @media screen and (max-width: 1100px) {
-        .about-container{
-            display: block;
-        }
-      }
-      @media screen and (max-width: 900px) {
-        .menu-container .menu{
-            display:block;
-          }
-      }
-    @media screen and (max-width: 650px) {
-      .services-container .service {
-        flex: 50%;
-      }
-    }
+}
