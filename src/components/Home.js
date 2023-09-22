@@ -264,7 +264,34 @@ const Home = () => {
                 <option value="">4</option>
               </select>
               <input type="datetime-local" />
+              <button>Book</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="team-container">
+        <h2>Reservation</h2>
+        <h1>Book A Table Online</h1>
+        <div className="chefs">
+          <div className="chef">
+            <div style={{ borderRadius: 20 }}><img src={require('../img/team-1.jpg')} alt="" /></div>
+            <h4 className="name">John Michael Smith</h4>
+            <div className="designation">Head Chef</div>
+          </div>
+          <div className="chef">
+            <img src={require('../img/team-2.jpg')} alt="" />
+            <h4 className="name">Thomas Joseph Anderson</h4>
+            <div className="designation">Sous Chef</div>
+          </div>
+          <div className="chef">
+            <img src={require('../img/team-3.jpg')} alt="" />
+            <h4 className="name">Michael James Roberts</h4>
+            <div className="designation">Line Cook</div>
+          </div>
+          <div className="chef">
+            <img src={require('../img/team-4.jpg')} alt="" />
+            <h4 className="name">William Patrick Wilson</h4>
+            <div className="designation">Pastry Chef</div>
           </div>
         </div>
       </div>

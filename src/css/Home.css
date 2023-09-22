@@ -134,7 +134,7 @@
 }
 .about-container {
   background-color: #f1f8ff;
-  padding: 5%;
+  padding: 3% 5%;
   display: flex;
 }
 .about-container .about-photos {
@@ -228,16 +228,11 @@
 }
 .menu-container {
   background-color: #f1f8ff;
-  padding: 4%;
+  padding: 3% 4%;
+  padding-bottom: 6%;
 }
 .menu-container .menu {
   display: flex;
-}
-.menu-container h2 {
-  width: fit-content;
-  font-size: 1.5rem;
-  color: #fea116;
-  margin: 0 auto;
 }
 .menu-container h1 {
   width: fit-content;
@@ -245,9 +240,15 @@
   font-size: 2.5rem;
   font-weight: 800;
 }
-.menu-container .menu {
-  margin: 15px 10px;
+.menu-container h2 {
+  width: fit-content;
+  font-size: 1.5rem;
+  color: #fea116;
+  margin: 0 auto;
 }
+/* .menu-container .menu {
+  margin: 15px 10px;
+} */
 .menu-container .menu .menu1 {
   margin-left: auto;
   margin-right: auto;
@@ -267,6 +268,7 @@
 .menu-container .menu .menu1 .item .details .price {
   position: relative;
   display: flex;
+  margin-bottom: 7px;
 }
 .menu-container .menu .menu1 .item .details .price h4 {
   margin: 0;
@@ -281,58 +283,119 @@
 .menu-container .menu .menu1 .item .details p {
   margin: auto 0;
 }
-.booking-container{
-    display: flex;
+.booking-container {
+  display: flex;
 }
-.booking-container .video{
-    width: 50%;
+.booking-container .video {
+  width: 50%;
 }
-.booking-container .video video{
-    width: 100%;
+.booking-container .video video {
+  width: 100%;
 }
-.booking-container .booking{
-    background-color: #0F172B;
-    padding: 20px;
-    display: grid;
-    align-items: center;
-    width: 50%;
+.booking-container .booking {
+  background-color: #0f172b;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 8px;
 }
-.booking-container .booking .booking-content{
-    height: fit-content;
+.booking-container .booking .booking-content {
+  height: fit-content;
 }
-.booking-container .booking .booking-content h2{
-    width: fit-content;
-    font-size: 1.5rem;
+.booking-container .booking .booking-content h2 {
+  width: fit-content;
+  font-size: 1.5rem;
+  color: #fea116;
+  margin: 0 20px;
+}
+.booking-container .booking .booking-content h1 {
+  color: white;
+  width: fit-content;
+  margin: 2px 20px;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.booking-container .booking .booking-content .input-fields {
+  display: grid;
+  padding: 10px 20px;
+}
+.booking-container .booking .booking-content .input-fields input {
+  color: grey;
+  height: 40px;
+  margin: 5px 0;
+  /* max-width: 600px; */
+}
+.booking-container .booking .booking-content .input-fields select {
+  height: 40px;
+  color: gray;
+  margin: 12px 0;
+  /* max-width: 600px; */
+}
+.booking-container .booking .booking-content .input-fields select option {
+  color: gray;
+}
+.booking-container .booking .booking-content .input-fields button {
+  background-color: #fea116;
+  font-weight: 600;
+  color: white;
+  border: #fea116;
+  font-size: 0.8rem;
+  height: 40px;
+  margin: 12px 0;
+  cursor: pointer;
+}
+.team-container {
+    background-color: #F1F8FF;
+    padding: 6% 3%;
+}
+.team-container h1 {
+  width: fit-content;
+  margin: 5px auto;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.team-container h2 {
+  width: fit-content;
+  font-size: 1.5rem;
+  color: #fea116;
+  margin: 0 auto;
+}
+.team-container .chefs {
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team-container .chefs .chef {
+  background-color: white;
+  flex: 20%;
+  /* height: 280px; */
+  margin: 10px;
+  padding: 10px;
+  padding-top: 20px;
+}
+.team-container .chefs .chef:hover{
     color: #fea116;
-    margin: 0 20px;
+    transition: 0.5s;
 }
-.booking-container .booking .booking-content h1{
-    color: white;
-    width: fit-content;
-    margin: 5px 20px;
-    font-size: 2.5rem;
-    font-weight: 800;
+.team-container .chefs .chef img {
+    border-radius: 100px;
+  width: 200px;
+  display: block;
+  margin: auto;
 }
-.booking-container .booking .booking-content .input-fields{
-    display: grid;
-    padding: 20px;
+.team-container .chefs .chef .name {
+  text-align: center;
+  margin: 7px 0;
 }
-.booking-container .booking .booking-content .input-fields input{
-    color: grey;
-    height: 40px;
-    margin: 12px 0;
-    max-width: 600px;
+.team-container .chefs .chef .designation {
+  text-align: center;
+  margin: 7px 0;
 }
-.booking-container .booking .booking-content .input-fields select{
-    height: 40px;
-    color: gray;
-    margin: 12px 0;
-    max-width: 600px;
 
-}
-.booking-container .booking .booking-content .input-fields select option{
-    color: gray;
-}
 @media screen and (max-width: 1300px) {
   .services-container .service {
     flex: 35%;
@@ -340,15 +403,18 @@
   .container .navbar {
     display: none;
   }
-  .booking-container{
+  .booking-container {
     display: block;
-}
-.booking-container .video{
+  }
+  .booking-container .video {
     width: 100%;
-}
-.booking-container .booking{
+  }
+  .booking-container .booking {
     width: 100%;
-}
+  }
+  .team-container .chefs .chef {
+    flex: 35%;
+  }
 }
 @media screen and (max-width: 1100px) {
   .about-container {
@@ -367,5 +433,8 @@
 @media screen and (max-width: 650px) {
   .services-container .service {
     flex: 50%;
+  }
+  .team-container .chefs .chef {
+    padding: 10px;
   }
 }
