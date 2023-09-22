@@ -131,4 +131,115 @@
     margin-top: 1.5rem;
     margin-bottom: 0.2rem;
   }
-  
+  .about-container {
+    background-color: #F1F8FF;
+    padding: 0 6%;
+    display: flex;
+  }
+  .about-container .about-photos {
+      margin-left: auto;
+      margin-right: auto;
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-container .about-photos .img-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+  }
+  .about-container .about-photos .img-container .about-img1 {
+    height: 300px;
+    width: 300px;
+  }
+  .about-container .about-photos .img-container .about-img2 {
+    position: absolute;
+    bottom: 0;
+    height: 220px;
+    width: 220px;
+  }
+  .about-container .about-photos .img-container .about-img3 {
+    position: absolute;
+    right: 0;
+    height: 220px;
+    width: 220px;
+  }
+  .about-container .about-photos .img-container .about-img4 {
+    height: 300px;
+    width: 300px;
+  }
+  .about-container .about-content {
+    align-items: center;
+    display: grid;
+    flex: 1;
+    margin-left: 30px;
+  }
+  .about-container .about-content h5 {
+    color: #FEA116;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .about-container .about-content h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+  }
+  .about-container .about-content p {
+      margin: 10px 0;
+    }
+  .about-container .about-content .experience{
+      display: flex;
+      margin-bottom: 20px;
+  }
+  .about-container .about-content .experience .experience1{
+      align-items: center;
+      width: 50%;
+      display: flex;
+  }
+  .about-container .about-content .experience .experience1 .number{
+      color: #FEA116;
+      font-size: 3rem;
+      font-weight: 600;
+  }
+  .about-container .about-content .experience .experience1 div{
+      align-items: center;
+      display: grid;
+      height:45px;
+      margin-left: 15px;
+  }
+  .about-container .about-content .experience .experience1 div h6{
+      margin: 0;
+      font-size: 1rem;
+  }
+  .about-container .about-content .experience .experience1 div p{
+      margin: 0;
+  }
+  .about-container .about-content button {
+    background-color: #FEA116;
+    font-weight: 600;
+    color: white;
+    border: #FEA116;
+    font-size: 0.8rem;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1300px) {
+      .services-container .service {
+        flex: 35%;
+      }
+      .container .navbar {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+        .about-container{
+            display: block;
+        }
+      }
+    @media screen and (max-width: 650px) {
+      .services-container .service {
+        flex: 50%;
+      }
+    }

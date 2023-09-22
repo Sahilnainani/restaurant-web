@@ -91,7 +91,71 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+      <div className="about-container">
+        <div className="about-photos">
+          <div className="img-container">
+            <img
+              className="about-img1"
+              src={require("../img/about-1.jpg")}
+              alt=""
+            />
+          </div>
+          <div className="img-container">
+            <img
+              className="about-img2"
+              src={require("../img/about-2.jpg")}
+              alt=""
+            />
+          </div>
+          <div className="img-container">
+            <img
+              className="about-img3"
+              src={require("../img/about-3.jpg")}
+              alt=""
+            />
+          </div>
+          <div className="img-container">
+            <img
+              className="about-img4"
+              src={require("../img/about-4.jpg")}
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="about-content">
+          <div style={{ height: "auto" }}>
+            <h5 className="heading">About Us-</h5>
+            <h1>Welcome to Faasos</h1>
+            <p>
+              A culinary gem nestled in the heart of Udaipur. We pride ourselves
+              on delivering an unforgettable dining experience that combines
+              exquisite flavors, impeccable service, and a welcoming ambiance.
+            </p>
+            <p>
+              Our restaurant's warm and inviting ambiance is the perfect
+              backdrop for any occasion, creating a relaxed and memorable dining
+              environment.
+            </p>
+            <div className="experience">
+              <div className="experience1">
+                <p className="number">15</p>
+                <div>
+                  <p>Years of</p>
+                  <h6>EXPERIENCE</h6>
+                </div>
+              </div>
+              <div className="experience1">
+                <p className="number">50</p>
+                <div>
+                  <p>Popular</p>
+                  <h6>MASTER CHEFS</h6>
+                </div>
+              </div>
+            </div>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
