@@ -270,11 +270,11 @@ const Home = () => {
         </div>
       </div>
       <div className="team-container">
-        <h2>Reservation</h2>
-        <h1>Book A Table Online</h1>
+        <h2>Team Members</h2>
+        <h1>Our Master Chefs</h1>
         <div className="chefs">
           <div className="chef">
-            <div style={{ borderRadius: 20 }}><img src={require('../img/team-1.jpg')} alt="" /></div>
+            <img src={require('../img/team-1.jpg')} alt="" />
             <h4 className="name">John Michael Smith</h4>
             <div className="designation">Head Chef</div>
           </div>
@@ -293,6 +293,42 @@ const Home = () => {
             <h4 className="name">William Patrick Wilson</h4>
             <div className="designation">Pastry Chef</div>
           </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="footer1">
+          <div className="section">
+            <h4 className="name">Company</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Reservation</p>
+            <p>Privacy Policy</p>
+            <p>Terms And Condition</p>
+          </div>
+          <div className="section">
+            <h4 className="name">Company</h4>
+            <p>23, Ahok Nagar, Udaipur</p>
+            <p>+91 79632 52368</p>
+            <p>fasoos@gmail.com</p>
+          </div>
+          <div className="section">
+            <h4 className="name">Opening</h4>
+            <p>Monday-Saturday</p>
+            <p>12AM-12PM</p>
+            <p>Sunday</p>
+            <p>12AM-11PM</p>
+          </div>
+          <div className="section">
+            <h4 className="name">Newsletter</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Reservation</p>
+            <p>Privacy Policy</p>
+            <p>Terms And Condition</p>
+          </div>
+        </div>
+        <div className="footer2">
+          <p>Copyright © 2021 Inferno - All rights reserved</p>
         </div>
       </div>
     </div>
