@@ -17,6 +17,9 @@
   display: flex;
   align-items: center;
 }
+.container .navbar .toggle-btn{
+    display: none;
+  }
 .container .restaurant-name {
   align-items: center;
   display: flex;
@@ -80,6 +83,7 @@
   margin-bottom: 20px;
 }
 .container .content .spinner {
+    overflow: hidden;
   margin-left: auto;
   margin-right: 30px;
 }
@@ -187,7 +191,7 @@
   margin: 10px 0;
 }
 .about-container .about-content .experience {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 20px;
 }
 .about-container .about-content .experience .experience1 {
@@ -427,12 +431,45 @@
   width: fit-content;
   color: white;
 }
+.dropdown-menu{
+    position: absolute;
+    right: 2rem;
+    top: 35px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0f172b;
+    /* background-b; */
+}
+.dropdown-menu li{
+    padding: 0.5rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .dropdown-menu li a:hover {
+    color: #fea116;
+    transition: 0.5s;
+  }
+  .dropdown-menu li button {
+    background-color: #fea116;
+    font-weight: 600;
+    color: white;
+    border: #fea116;
+    font-size: 1rem;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+  }
 @media screen and (max-width: 1300px) {
   .services-container .service {
     flex: 35%;
-  }
-  .container .navbar {
-    display: none;
   }
   .booking-container {
     display: block;
@@ -452,7 +489,29 @@
     display: block;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
+        .container .navbar .restaurant-name{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;            
+        }
+      .container {
+        height: 750px;
+      }
+      .container .navbar{
+        backdrop-filter: blur(15px);
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        display: block;
+        padding-bottom: 10px;
+      }
+      .container .navbar ul{
+        display: block; 
+      }
+      .container .navbar ul li{
+        margin: 10px;
+      }
+
   .footer .footer1 .section h4 {
     margin-top: 0px;
     margin-bottom: 8px;
@@ -469,7 +528,83 @@
     padding: 0 10px;
   }
 }
+@media screen and (max-width: 800px) and (min-width:500px){
+    .container .content .spinner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        height: 950px;
+    }
+    .container .content{
+        display: block;
+    }
+    .container .content .content-wrapper{
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+    .container .content .content-wrapper h2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .container .content .content-wrapper div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 700px){
+    .about-container{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .menu-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about-container .about-photos {
+        width: 420px;
+      }
+      .about-container .about-photos .img-container {
+        height: 200px;
+        width: 200px;
+      }
+      .about-container .about-photos .img-container .about-img1 {
+        height: 200px;
+        width: 200px;
+      }
+      .about-container .about-photos .img-container .about-img2 {
+        height: 150px;
+        width: 150px;
+      }
+      .about-container .about-photos .img-container .about-img3 {
+        height: 150px;
+        width: 150px;
+      }
+      .about-container .about-photos .img-container .about-img4 {
+        height: 200px;
+        width: 200px;
+      }
+}
 @media screen and (max-width: 650px) {
+    .container{
+        height: 950px;
+    }
+    .container .content .content-wrapper h2{
+        width: 70%;
+    }
+    .container .content .content-wrapper div{
+        width: 90%;
+    }
   .footer .footer1 .section {
     padding-top: 0px;
     flex: 50%;
@@ -480,4 +615,56 @@
   .team-container .chefs .chef {
     padding: 10px;
   }
+}
+@media (max-width: 500px){
+    .container{
+        height: 850px;
+    }
+    .container .content .spinner {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 300px;
+    }
+    .container .content .spinner .spinner-image{
+        height: 300px;
+        width: 300px;
+    }
+    .about-container .about-photos {
+        width: 320px;
+      }
+      .about-container .about-photos .img-container {
+        height: 150px;
+        width: 150px;
+      }
+      .about-container .about-photos .img-container .about-img1 {
+        height: 150px;
+        width: 150px;
+      }
+      .about-container .about-photos .img-container .about-img2 {
+        height: 125px;
+        width: 125px;
+      }
+      .about-container .about-photos .img-container .about-img3 {
+        height: 125px;
+        width: 125px;
+      }
+      .about-container .about-photos .img-container .about-img4 {
+        height: 150px;
+        width: 150px;
+      }
+      .container .content .content-wrapper h2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .container .content .content-wrapper div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .about-container .experience{
+        display: block;
+    }
 }
