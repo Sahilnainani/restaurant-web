@@ -15,7 +15,7 @@ const Home = () => {
     var menuList = document.getElementById("menuList");
     console.log(menuList.style.right)
     if (menuList.style.right === "0px") {
-      menuList.style.right = "-300px";
+      menuList.style.right = "-920px";
     } else {
       menuList.style.right = "0px";
     }
