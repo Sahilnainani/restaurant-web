@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUtensils,
   faUserTie,
   faCartShopping,
+  faBars,faXmark
 } from "@fortawesome/free-solid-svg-icons";
 import "../css/Home.css";
 const Home = () => {
+  const [click,setClick] = useState(false)
+
+  // Handle Menu Button
+  const handleClick = () =>{
+    var menuList = document.getElementById("menuList");
+    console.log(menuList.style.right)
+    if (menuList.style.right === "0px") {
+      menuList.style.right = "-300px";
+    } else {
+      menuList.style.right = "0px";
+    }
+    if(click){
+      setClick(false)
+    }
+    else{
+      setClick(true)
+    }
+  }
   return (
     <div>
       <div className="container">
@@ -19,7 +38,7 @@ const Home = () => {
             />
             <h2>FAASOS</h2>
           </div>
-          <ul>
+          <ul id="menuList" >
             <li>
               <a href="#home">HOME</a>
             </li>
@@ -36,6 +55,12 @@ const Home = () => {
               <button>Book A Table</button>
             </li>
           </ul>
+          <div className="mobile">
+          {
+            click ? <FontAwesomeIcon onClick={handleClick}  icon={faXmark} />
+            :<FontAwesomeIcon onClick={handleClick} icon={faBars} />
+          }
+          </div>
         </nav>
         <div className="content">
           <div className="content-wrapper">
@@ -54,7 +79,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#F1F8FF", alignItems: "center" }}>
+      <div id='service' style={{ backgroundColor: "#F1F8FF", alignItems: "center" }}>
         <div className="services-container">
           <div className="service">
             <FontAwesomeIcon className="service-logo" icon={faUserTie} />
@@ -90,7 +115,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="about-container">
+      <div id="aboutus" className="about-container">
         <div className="about-photos">
           <div className="img-container">
             <img
@@ -155,7 +180,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="menu-container">
+      <div id="menu" className="menu-container">
         <h2>Food Menu</h2>
         <h1>Most Popular Items</h1>
         <div className="menu">
@@ -245,7 +270,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="booking-container">
+      <div id="booking" className="booking-container">
         <div className="video">
           <video src={require('../img/JunkFood1.mp4')} loop muted autoPlay={"autoplay"} controls=''></video>
         </div>
@@ -268,7 +293,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="team-container">
+      <div id="team" className="team-container">
         <h2>Team Members</h2>
         <h1>Our Master Chefs</h1>
         <div className="chefs">
@@ -294,7 +319,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="footer">
+      <div id="contactus" className="footer">
         <div className="footer1">
           <div className="section">
             <h4 className="name">Company</h4>
