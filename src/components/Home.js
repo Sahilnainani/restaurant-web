@@ -36,7 +36,7 @@ const Home = () => {
               icon={faUtensils}
               style={{ color: "#FEA116" }}
             />
-            <h2>FAASOS</h2>
+            <h2>MIRATA</h2>
           </div>
           <ul id="menuList" >
             <li>
@@ -149,7 +149,7 @@ const Home = () => {
         <div className="about-content">
           <div style={{ height: "auto" }}>
             <h5 className="heading">About Us-</h5>
-            <h1>Welcome to Faasos</h1>
+            <h1>Welcome to Mirata</h1>
             <p>
               A culinary gem nestled in the heart of Udaipur. We pride ourselves
               on delivering an unforgettable dining experience that combines
